@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>G.D. Tan & Co., Inc.</title>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+	<link rel = "stylesheet" href="resources/bootstrap.min.css">
+	<script src = "resources/jquery-1.12.2.min.js"></script>
+	<script src = "resources/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Add smooth scrolling to all links in navbar + footer link
+			$(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+			// Prevent default anchor click behavior
+			event.preventDefault();
+
+			// Store hash
+			var hash = this.hash;
+
+			// Using jQuery's animate() method to add smooth page scroll
+			// The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 900, function(){
+
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+				});
+			});
+		})
+	</script>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+</head>
+
+<style>
+.navbar {
+    margin-bottom: 0;
+    background-color: #0000bb;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 3px;
+    border-radius: 0;
+	font-family: 'Oswald', sans-serif;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #0000bb !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #000 !important;
+}
+.bg-0 {
+	background-color: #fff; /* blue on white */
+	color: #0000bb;
+	font-family: 'Oswald', sans-serif;
+
+}
+
+.bg-1 {
+	color: #fff; /* white on brown */
+	background-color: #993333; 
+	font-family: 'Oswald', sans-serif;
+
+}
+
+.bg-2 {
+	color: #fff; /* white on blue*/
+	background-color: #0000bb; 
+	font-family: 'Oswald', sans-serif;
+
+}	
+
+.bg-3 {
+	color:  #993333; /* brown on white */
+	background-color: #fff;
+	font-family: 'Oswald', sans-serif;
+}
+
+.jumbotron{
+
+	color: #000066;
+	padding: 100px 25px;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center
+}
+
+.bg-frontpage{
+	background-color: #e9d2c0;
+}
+.container-fluid{
+	font-family: 'Roboto Condensed', sans-serif;
+	padding: 60px 50px;
+}
+.col-md-4 h2, .col-md-4 h3{
+	text-align: center;
+}
+h3 {
+	text-align: center;
+}
+p {
+	font-size: 150%;
+	text-align: center;
+}
+
+html, body, #wrapper {
+   height:100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+#wrapper td {
+   vertical-align: middle;
+   text-align: center;
+}
+#Offering {
+	background-color: #fff;
+	color: #0000bb;
+}
+#emphasis{
+}
+.thumbnail{
+	border-style: solid;
+	border-width: 3px;
+	border-color: #0000bb;
+	background-color: #fff; /* blue on white */
+	color: #0000bb;
+	font-family: 'Oswald', sans-serif;
+}
+
+</style>
+
+<body id="RDPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+	<nav class = "navbar navbar-default navbar-fixed-top">
+		<div class = "container">
+			<div class = "navbar-header">
+				<button type = "button" class ="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class = "navbar-brand" href="#">G.D. TAN & CO., INC.</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#about">ABOUT US</a></li>
+					<li><a href="#officers">OFFICERS</a></li>
+					<li><a href="#contact">CONTACT US</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="bg-frontpage container-fluid">
+		<img class="img-responsive" src="resources/frontpage-bg.jpg">
+	</div>
+	<div id="about" class="container-fluid bg-1 text-center">
+		<!--<h3>We are experts in the foodservice industry.</h3>-->
+		<h1><strong>About Us</h1></strong>
+		<h3>Our company, G.D. Tan & Co., Inc., is one of the oldest local stock brokerage houses in
+		the Philippines, having been a member of the Manila Stock Exchange since our 
+		establishment in 1968. We have been ranked among the Top 10 Companies among local
+		stock brokers prior to the Exchange's unification with the Makati Stock Exchange,
+		in forming the Philippine Stock Exchange.</h3>
+	</div>
+	<div class="container-fluid bg-3" id="emphasis">
+		<div class="row">
+			<div class="col-md-4">
+				<h2><strong>Our Commitment To You</strong></h2>
+			</div>
+			<div class="col-md-4" id="Offering">
+				<h2>What We Offer</h2>
+			</div>
+			<div class="col-md-4">
+				<h2>Our Principles</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<h3>We commit ourselves to providing our clients with the best possible service
+				in terms of market advice and research.</h3>			
+			</div>
+			<div class="col-md-4" id="Offering">
+				<h3>Our firm is committed to global competitiveness, offering traditional and
+				innovative products of services that cater to the needs of corporate, middle market,
+				and retail clients.</h3>
+			</div>
+			<div class="col-md-4">
+				<h3>Diligence, dedication, and determination--</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<h4>We act as our clients' agent in executing orders, taking care that their instructions
+				are carried out efficiently with strict adherence to ethical standards. Our diligence
+				in maintaining the performance of the firm's stock pickings and full disclosure to clients
+				of the firm's preferences also ensure maximization of investment risks. Our firm
+				is also a licensed dealer in securities, a function it likewise effectively carries 
+				out through participation in Initial Public Offerings (IPO) of stocks.</h4>		
+			</div>
+			<div class="col-md-4" id="Offering">
+				<h4>Our substantial placements and deposits in reputable banks also make our company
+				financially sound as far as stock brokering and dealership are concerned. This is
+				because as a company, we believe in offering our clients security with customer focus,
+				innovation, professional expertise, and quality service.</h4>
+			</div>
+			<div class="col-md-4">
+				<h4>These are the key principles that have helped shape G.D. Tan & Co., Inc. for more than 40
+				years. Yes, these are the same ideals that helped shape G.D. Tan & Co., Inc. to maintain
+				its formidable standing in the equity market, which is now experiencing incredible
+				globalization and liberalization.</h4>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid bg-2" id="officers">
+		<h1><strong>Our Team</strong></h1>
+		<!-- Details of Key Officers-->
+	</div>
+	<div class="container-fluid bg-0">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2><strong>Directors & Officers</h2></strong>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+			<div class="thumbnail">
+				<h3>Gilbert S. Tan</h3>
+				<p>President and Chairman</p>
+				<img src="resources/officers/GilbertTan.jpg" class="img-circle" alt="Alt">
+				<p><strong>Email:</strong> chaybalcueba@yahoo.com</p>
+				<p><strong>Number:</strong> 637-5686 | 634-6255 | 634-6256</p>
+			</div>
+			</div>
+			
+			<div class="col-sm-6">
+			<div class="thumbnail">
+				<h3>Daisy T. Tieng</h3>
+				<p>Vice President</p>
+				<img src="resources/officers/DaisyTieng.jpg" class="img-circle" alt="Alt">
+				<p><strong>Email:</strong> daisytieng@yahoo.com</p>
+				<p><strong>Number:</strong> 637-5686 | 634-6255 | 634-6256</p>
+			</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+			<div class="thumbnail">
+				<h3>Dorothy T. Co</h3>
+				<p>Treasurer</p>
+				<img src="resources/officers/DorothyCo.jpg" class="img-circle" alt="Alt">
+				<p><strong>Email:</strong> jasontanco01@yahoo.com</p>
+				<p><strong>Number:</strong> 637-5686 | 634-6255 | 634-6256</p>
+			</div>
+			</div>
+			<div class="col-sm-6">
+			<div class="thumbnail">
+				<h3>Dionicia S. Tan</h3>
+				<p>Corporate Secretary</p>
+				<img src="resources/officers/DioniciaTan.jpg" class="img-circle" alt="Alt">
+				<p><strong>Email:</strong> dioniciatan@yahoo.com</p>
+				<p><strong>Number:</strong> 637-5686 | 634-6255 | 634-6256</p>
+			</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+			<div class="thumbnail">
+				<h3>Diana T. Uy</h3>
+				<p>Director</p>
+				<img src="resources/officers/DianaUy.jpg" class="img-circle" alt="Alt">
+				<p><strong>Email:</strong> dianatanuy@gmail.com</p>
+				<p><strong>Number:</strong> 637-5686 | 634-6255 | 634-6256</p>
+			</div>
+			</div>
+			<div class="col-sm-6">
+			<div class="thumbnail">
+				<h3>Geraldine Y. Tan</h3>
+				<p>Corporate Secretary</p>
+				<img src="resources/officers/GeraldineTan.jpg" class="img-circle" alt="Alt">
+				<p><strong>Email:</strong> chaybalcueba@yahoo.com</p>
+				<p><strong>Number:</strong> 637-5686 | 634-6255 | 634-6256</p>
+			</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+			<div class="thumbnail">
+				<h3>Linda D. Ventura</h3>
+				<p>Director</p>
+				<img src="resources/officers/LindaVentura.jpg" class="img-circle" alt="Alt">
+				<p><strong>Email:</strong> lindadventura@yahoo.com</p>
+				<p><strong>Number:</strong> 637-5686 | 634-6255 | 634-6256</p>
+			</div>
+			</div>
+			<div class="col-sm-6">
+			<div class="thumbnail">
+				<h3>Alan Ventura</h3>
+				<p>Director</p>
+				<img src="resources/officers/AlanVentura.jpg" class="img-circle" alt="Alt">
+				<p><strong>Email:</strong> gdtaninc@yahoo.com</p>
+				<p><strong>Number:</strong> 637-5686 | 634-6255 | 634-6256</p>
+			</div>
+			</div>
+		</div>
+		
+		<!--Salesmen and Associated Persons-->
+		<div class="row">
+			<div class="col-xs-12">
+				<h2><strong>Salesmen and Associated Persons</h2></strong>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+			<div class="thumbnail">
+				<h3>Thelma R. Uy</h3>
+				<p>Associated Person</p>
+				<img src="resources/officers/ThelmaUy.jpg" class="img-circle" alt="Alt">
+				<p><strong>Email:</strong> thelmauy53@yahoo.com</p>
+				<p><strong>Number:</strong> 634-6255 | 634-6256</p>
+			</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+			<div class="thumbnail">
+				<h3>Felix Y. Del Rosario</h3>
+				<p>Salesman</p>
+				<img src="resources/officers/FelixDelRosario.jpg" class="img-circle" alt="Alt">
+				<p><strong>Email:</strong> gdtaninc@yahoo.com</p>
+				<p><strong>Number:</strong> 634-6255 | 634-6256</p>
+			</div>
+			</div>
+			<div class="col-sm-4">
+			<div class="thumbnail">
+				<h3>Erich Louis U. Hao</h3>
+				<p>Salesman</p>
+				<img src="resources/officers/ErichHao.jpg" class="img-circle" alt="Alt">
+				<p><strong>Email:</strong> erich_hao@ymail.com</p>
+				<p><strong>Number:</strong> 634-6255 | 634-6256</p>
+			</div>
+			</div>
+			<div class="col-sm-4">
+			<div class="thumbnail">
+				<h3>Alandale C. Ong</h3>
+				<p>Salesman</p>
+				<img src="resources/officers/AlandaleOng.jpg" class="img-circle" alt="Alt">
+				<p><strong>Email:</strong> gdtaninc@yahoo.com</p>
+				<p><strong>Number:</strong> 634-6255 | 634-6256</p>
+			</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+			<div class="thumbnail">
+				<h3>Gilbert S. Tan</h3>
+				<p>Salesman</p>
+				<img src="resources/officers/GilbertTan.jpg" class="img-circle" alt="Alt">
+				<p><strong>Email:</strong> chaybalcueba@yahoo.com</p>
+				<p><strong>Number:</strong> 634-6255 | 634-6256</p>
+			</div>
+			</div>
+			<div class="col-sm-4">
+			<div class="thumbnail">
+				<h3>Mark Andrew T. Tieng</h3>
+				<p>Salesman</p>
+				<img src="resources/officers/MarkTieng.jpg" class="img-circle" alt="Alt">
+				<p><strong>Email:</strong> gdtaninc@yahoo.com</p>
+				<p><strong>Number:</strong> 634-6255 | 634-6256</p>
+			</div>
+			</div>
+			<div class="col-sm-4">
+			<div class="thumbnail">
+				<h3>Geraldine Y. Tieng</h3>
+				<p>Salesman</p>
+				<img src="resources/officers/GeraldineTieng.jpg" class="img-circle" alt="Alt">
+				<p><strong>Email:</strong> gdtaninc@yahoo.com</p>
+				<p><strong>Number:</strong> 634-6255 | 634-6256</p>
+			</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+			<div class="thumbnail">
+				<h3>John Eric T. Tieng</h3>
+				<p>Salesman</p>
+				<img src="resources/officers/JohnTieng.jpg" class="img-circle" alt="Alt">
+				<p><strong>Email:</strong> gdtaninc@yahoo.com</p>
+				<p><strong>Number:</strong> 634-6255 | 634-6256</p>
+			</div>
+			</div>
+			<div class="col-sm-4">
+			<div class="thumbnail">
+				<h3>Willy Y. Tieng</h3>
+				<p>Salesman</p>
+				<img src="resources/officers/WillyTieng.jpg" class="img-circle" alt="Alt">
+				<p><strong>Email:</strong> wytieng@gmail.com</p>
+				<p><strong>Number:</strong> 634-6255 | 634-6256</p>
+			</div>
+			</div>
+			<div class="col-sm-4">
+			<div class="thumbnail">
+				<h3>Diana T. Uy</h3>
+				<p>Salesman</p>
+				<img src="resources/officers/DianaUy.jpg" class="img-circle" alt="Alt">
+				<p><strong>Email:</strong> dianatanuy@gmail.com</p>
+				<p><strong>Number:</strong> 634-6255 | 634-6256</p>
+			</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+			<div class="thumbnail">
+				<h3>Eric A. Uy</h3>
+				<p>Salesman</p>
+				<img src="resources/officers/EricUy.jpg" class="img-circle" alt="Alt">
+				<p><strong>Email:</strong> gdtaninc@yahoo.com</p>
+				<p><strong>Number:</strong> 634-6255 | 634-6256</p>
+			</div>
+			</div>
+			<div class="col-sm-4">
+			<div class="thumbnail">
+				<h3>Carlos S. Zurbito Jr.</h3>
+				<p>Salesman</p>
+				<img src="resources/officers/CarlosZurbito.jpg" class="img-circle" alt="Alt">
+				<p><strong>Email:</strong> gdtaninc@yahoo.com</p>
+				<p><strong>Number:</strong> 634-6255 | 634-6256</p>
+			</div>
+			</div>
+		</div>
+	</div>
+
+		
+
+	
+	<div id="contact" class="container-fluid bg-2 text-center">
+		<!-- Registration Form-->
+		<h1>Be A Part of Our Family!</h1>
+		<h3>Our company's strategic investments in technology and real estate are helping
+		us reach higher growth potentials that will help raise the status of the Philippines'
+		capital market to a level at par with those of the more progressive nations of Asia.</h3>
+		<h3>We hope you can join us in this endeavor, and be a part of the G.D. Tan family!</h3>
+		
+		<div class="row bg-0">
+			<div class="col-sm-4">
+				<h2>G.D. Tan & Co., Inc.</h2>
+				<h4>Established in 1968</h4>
+				<ul>
+					<li>Trading Participant in the Philippine Stock Exchange</li>
+					<li>Member of Securities Investors' Protection Fund</li>
+				</ul>
+			</div>
+			<div class="col-sm-8">
+				<h2><strong>Business Address:</strong></h2>
+				<h4>Unit 2203-A East Tower, PSE Center, Exchange Road, Ortigas Center, Pasig City</h4>
+		
+				<h2><strong>Office Telephone Numbers:</strong></h2>
+				<h4>637-5686 | 637-6256 </h4>
+		
+				<h2><strong>Trading Floor Numbers:</strong></h2>
+				<h4>634-6255 | 634-6256</h4>
+		
+				<h2><strong>Fax Number:</strong></h2>
+				<h4>637-6256</h4>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
