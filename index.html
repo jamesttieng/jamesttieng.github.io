@@ -37,7 +37,7 @@
 <style>
 .navbar {
     margin-bottom: 0;
-    background-color: #0000bb;
+    background-color: #102c57;
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -52,7 +52,7 @@
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #0000bb !important;
+    color: #102c57 !important;
     background-color: #fff !important;
 }
 
@@ -62,27 +62,27 @@
 }
 .bg-0 {
 	background-color: #fff; /* blue on white */
-	color: #0000bb;
+	color: #102c57;
 	font-family: 'Oswald', sans-serif;
 
 }
 
 .bg-1 {
 	color: #fff; /* white on brown */
-	background-color: #993333; 
+	background-color: #8b2f3a; 
 	font-family: 'Oswald', sans-serif;
 
 }
 
 .bg-2 {
 	color: #fff; /* white on blue*/
-	background-color: #0000bb; 
+	background-color: #102c57; 
 	font-family: 'Oswald', sans-serif;
 
 }	
 
 .bg-3 {
-	color:  #993333; /* brown on white */
+	color:  #8b2f3a; /* brown on white */
 	background-color: #fff;
 	font-family: 'Oswald', sans-serif;
 }
@@ -126,17 +126,62 @@ html, body, #wrapper {
 }
 #Offering {
 	background-color: #fff;
-	color: #0000bb;
+	color: #102c57;
 }
 #emphasis{
 }
 .thumbnail{
 	border-style: solid;
-	border-width: 3px;
-	border-color: #0000bb;
+	border: 1px solid #d6dce5;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 	background-color: #fff; /* blue on white */
-	color: #0000bb;
+	color: #102c57;
 	font-family: 'Oswald', sans-serif;
+}
+.emphasis-card {
+	padding: 20px 25px;
+}
+
+.emphasis-card h2,
+.emphasis-card h3 {
+	text-align: center;
+}
+
+.emphasis-card h4 {
+	text-align: left;
+	line-height: 1.4;
+}
+
+.emphasis-card h3 {
+	line-height: 1.35;
+}
+
+@media (max-width: 767px) {
+	#emphasis {
+		padding: 30px 20px;
+	}
+
+	.emphasis-card {
+		margin-bottom: 25px;
+		padding: 24px 18px;
+		border: 2px solid #102c57;
+	}
+
+	.emphasis-card:last-child {
+		margin-bottom: 0;
+	}
+
+	.emphasis-card h2 {
+		font-size: 1.6rem;
+	}
+
+	.emphasis-card h3 {
+		font-size: 1.2rem;
+	}
+
+	.emphasis-card h4 {
+		font-size: 1rem;
+	}
 }
 
 </style>
@@ -166,7 +211,7 @@ html, body, #wrapper {
 	</div>
 	<div id="about" class="container-fluid bg-1 text-center">
 		<!--<h3>We are experts in the foodservice industry.</h3>-->
-		<h1><strong>About Us</h1></strong>
+		<h1><strong>About Us</strong></h1>
 		<h3>Our company, G.D. Tan & Co., Inc., is one of the oldest local stock brokerage houses in
 		the Philippines, having been a member of the Manila Stock Exchange since our 
 		establishment in 1968. We have been ranked among the Top 10 Companies among local
@@ -175,46 +220,31 @@ html, body, #wrapper {
 	</div>
 	<div class="container-fluid bg-3" id="emphasis">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-4 emphasis-card">
 				<h2><strong>Our Commitment To You</strong></h2>
-			</div>
-			<div class="col-md-4" id="Offering">
-				<h2>What We Offer</h2>
-			</div>
-			<div class="col-md-4">
-				<h2>Our Principles</h2>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
 				<h3>We commit ourselves to providing our clients with the best possible service
-				in terms of market advice and research.</h3>			
-			</div>
-			<div class="col-md-4" id="Offering">
-				<h3>Our firm is committed to global competitiveness, offering traditional and
-				innovative products of services that cater to the needs of corporate, middle market,
-				and retail clients.</h3>
-			</div>
-			<div class="col-md-4">
-				<h3>Diligence, dedication, and determination--</h3>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
+				in terms of market advice and research.</h3>	
 				<h4>We act as our clients' agent in executing orders, taking care that their instructions
 				are carried out efficiently with strict adherence to ethical standards. Our diligence
 				in maintaining the performance of the firm's stock pickings and full disclosure to clients
-				of the firm's preferences also ensure maximization of investment risks. Our firm
+				of the firm's preferences also ensure management of investment risks. Our firm
 				is also a licensed dealer in securities, a function it likewise effectively carries 
-				out through participation in Initial Public Offerings (IPO) of stocks.</h4>		
+				out through participation in Initial Public Offerings (IPO) of stocks.</h4>	
 			</div>
-			<div class="col-md-4" id="Offering">
+			
+			<div class="col-md-4 emphasis-card" id="Offering">
+				<h2><strong>What We Offer</strong></h2>
+				<h3>Our firm is committed to global competitiveness, offering traditional and
+				innovative products of services that cater to the needs of corporate, middle market,
+				and retail clients.</h3>
 				<h4>Our substantial placements and deposits in reputable banks also make our company
 				financially sound as far as stock brokering and dealership are concerned. This is
 				because as a company, we believe in offering our clients security with customer focus,
 				innovation, professional expertise, and quality service.</h4>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 emphasis-card">
+				<h2><strong>Our Principles</strong></h2>
+				<h3>Diligence, dedication, and determination:</h3>
 				<h4>These are the key principles that have helped shape G.D. Tan & Co., Inc. for more than 50
 				years. Yes, these are the same ideals that helped shape G.D. Tan & Co., Inc. to maintain
 				its formidable standing in the equity market, which is now experiencing incredible
@@ -454,11 +484,10 @@ html, body, #wrapper {
 	
 	<div id="contact" class="container-fluid bg-2 text-center">
 		<!-- Registration Form-->
-		<h1>Be A Part of Our Family!</h1>
-		<h3>Our company's strategic investments in technology and real estate are helping
-		us reach higher growth potentials that will help raise the status of the Philippines'
-		capital market to a level at par with those of the more progressive nations of Asia.</h3>
-		<h3>We hope you can join us in this endeavor, and be a part of the G.D. Tan family!</h3>
+		<h1>Serving Investors Since 1968</h1>
+		<h3>G.D. Tan & Co., Inc. has been providing stock brokerage services to generations of investors for more than five decades. 
+		We remain committed to delivering professional service, market insight, and long-term client relationships grounded in trust and integrity.</h3><br><br>
+		
 		
 		<div class="row bg-0">
 			<div class="col-sm-4">
